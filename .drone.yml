@@ -21,8 +21,7 @@ steps:
     - ${DRONE_TAG}
 
 - name: alert
-  pull: never
-  image: drone-google-chat:latest
+  image: mcsteen/drone-google-chat:latest
   settings:
     URL:
       from_secret: GOOGLE_CHAT_WEBHOOK
