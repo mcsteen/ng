@@ -15,14 +15,12 @@ steps:
     password:
       from_secret: DOCKER_PASSWORD
     repo: mcsteen/ng
+    dockerfile: dockerfile
     tags:
     - latest
     - ${DRONE_TAG}
 
 - name: alert
-  when:
-    status:
-    - failure
   pull: never
   image: drone-google-chat:latest
   settings:
