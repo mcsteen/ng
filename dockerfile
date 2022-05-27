@@ -1,5 +1,5 @@
-FROM node:fermium-alpine
+FROM node:gallium-alpine
 
 RUN npm install -g npm
 
-RUN npm install -g @angular/cli@11.2.18
+RUN npm install -g @angular/cli@12.2.17
