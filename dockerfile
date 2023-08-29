@@ -2,4 +2,4 @@ FROM node:gallium-alpine
 
 RUN npm install -g npm
 
-RUN npm install -g @angular/cli@12.2.18
+RUN npm install -g @angular/cli@14.2.12
